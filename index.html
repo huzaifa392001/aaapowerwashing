@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AAA Power Washing | Professional Pressure Washing in Southlake, TX</title>
+  <meta name="description"
+    content="AAA Power Washing — professional pressure washing for driveways, sidewalks, patios, trash bins & garage floors in Southlake, TX and surrounding areas." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#2563eb',
+              light: '#3b82f6',
+              dark: '#1d4ed8',
+              deep: '#1e3a8a',
+              soft: '#eff6ff',
+            },
+          },
+          fontFamily: {
+            display: ['Montserrat', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-white text-slate-600 antialiased">
+
+  <!-- ========== STICKY HEADER ========== -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20 gap-4">
+        <a href="#home" class="site-logo shrink-0 flex items-center" aria-label="AAA Power Washing Home">
+          <img
+            src="./images/logo.png"
+            alt="AAA Power Washing"
+            width="56"
+            height="56"
+            class="h-11 w-11 md:h-14 md:w-14 object-contain"
+          />
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-600">
+          <a href="#home" class="hover:text-brand transition-colors">Home</a>
+          <a href="#services" class="hover:text-brand transition-colors">Services</a>
+          <a href="#gallery" class="hover:text-brand transition-colors">Gallery</a>
+          <a href="#reviews" class="hover:text-brand transition-colors">Reviews</a>
+          <a href="#contact" class="hover:text-brand transition-colors">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="tel:4695047695"
+            class="btn-pulse hidden sm:inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-display font-bold text-sm md:text-base px-4 md:px-6 py-2.5 md:py-3 rounded-full shadow-md shadow-slate-200/80 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            Call Today: (469)-504-7695
+          </a>
+          <a href="tel:4695047695"
+            class="sm:hidden btn-pulse inline-flex items-center justify-center w-11 h-11 rounded-full bg-brand text-white shadow-md"
+            aria-label="Call Today">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </a>
+          <button id="menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu"
+            aria-expanded="false">
+            <span class="block w-6 h-0.5 bg-slate-800 transition-transform"></span>
+            <span class="block w-6 h-0.5 bg-slate-800 transition-opacity"></span>
+            <span class="block w-6 h-0.5 bg-slate-800 transition-transform"></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-nav" class="lg:hidden">
+        <nav class="flex flex-col gap-1 pb-4 pt-1 border-t border-slate-100">
+          <a href="#home" class="mobile-link px-2 py-3 text-slate-700 hover:text-brand font-medium">Home</a>
+          <a href="#services" class="mobile-link px-2 py-3 text-slate-700 hover:text-brand font-medium">Services</a>
+          <a href="#gallery" class="mobile-link px-2 py-3 text-slate-700 hover:text-brand font-medium">Gallery</a>
+          <a href="#reviews" class="mobile-link px-2 py-3 text-slate-700 hover:text-brand font-medium">Reviews</a>
+          <a href="#contact" class="mobile-link px-2 py-3 text-slate-700 hover:text-brand font-medium">Contact</a>
+          <a href="tel:4695047695"
+            class="mt-2 mx-2 mb-1 text-center bg-brand text-white font-display font-bold py-3 rounded-full">Call
+            (469)-504-7695</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-slate-50">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div
+      class="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(248,250,252,0.35)_65%,rgba(248,250,252,0.55)_100%)] pointer-events-none">
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pb-28">
+      <p
+        class="hero-eyebrow font-display font-semibold text-brand tracking-widest uppercase text-xs sm:text-sm mb-4 opacity-0">
+        Southlake &amp; Surrounding Areas</p>
+      <h1
+        class="hero-title font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.08] text-slate-900 mb-6">
+        <span class="hero-word inline-block">Professional</span>
+        <span class="hero-word inline-block">Pressure</span>
+        <span class="hero-word inline-block">Washing</span>
+        <span class="hero-word inline-block">in</span>
+        <span class="hero-word inline-block text-brand">Southlake,</span>
+        <span class="hero-word inline-block text-brand">TX</span>
+      </h1>
+      <p class="hero-sub text-slate-600 text-base sm:text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-0">
+        Driveways &bull; Sidewalks &bull; Patios &bull; Trash Bin Cleaning
+      </p>
+      <div class="hero-ctas flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0">
+        <a href="#contact"
+          class="inline-flex items-center justify-center w-full sm:w-auto bg-brand hover:bg-brand-dark text-white font-display font-bold text-base px-8 py-4 rounded-full shadow-md shadow-slate-200 transition-all hover:shadow-lg hover:-translate-y-0.5">
+          Get a Free Quote
+        </a>
+        <a href="#gallery"
+          class="inline-flex items-center justify-center w-full sm:w-auto border-2 border-slate-300 hover:border-brand text-slate-900 hover:bg-brand-soft/50 font-display font-bold text-base px-8 py-4 rounded-full transition-all hover:-translate-y-0.5">
+          See Our Work
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRUST BANNER ========== -->
+  <div class="relative z-20 -mt-16 md:-mt-20 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-md shadow-slate-200/70 border border-slate-100">
+      <div class="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-slate-100">
+        <div class="flex items-center justify-center gap-2.5 sm:gap-3 px-3 py-5 sm:py-6">
+          <svg class="w-5 h-5 text-brand shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+          </svg>
+          <span class="font-display font-semibold text-xs sm:text-sm md:text-base text-slate-900">5-Star Service</span>
+        </div>
+        <div class="flex items-center justify-center gap-2.5 sm:gap-3 px-3 py-5 sm:py-6">
+          <svg class="w-5 h-5 text-brand shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+          <span class="font-display font-semibold text-xs sm:text-sm md:text-base text-slate-900">Locally Owned</span>
+        </div>
+        <div class="flex items-center justify-center gap-2.5 sm:gap-3 px-3 py-5 sm:py-6">
+          <svg class="w-5 h-5 text-brand shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span class="font-display font-semibold text-xs sm:text-sm md:text-base text-slate-900">Fast &amp;
+            Dependable</span>
+        </div>
+        <div class="flex items-center justify-center gap-2.5 sm:gap-3 px-3 py-5 sm:py-6">
+          <svg class="w-5 h-5 text-brand shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+          </svg>
+          <span class="font-display font-semibold text-xs sm:text-sm md:text-base text-slate-900">Free Estimates</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SUMMER SPECIAL ========== -->
+  <section id="special" class="relative mt-16 md:mt-20 overflow-hidden">
+    <div class="bg-blue-600">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 py-10 md:py-14 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div class="reveal">
+          <p class="font-display font-bold text-blue-100 text-sm tracking-[0.2em] uppercase mb-2">Limited Time Offer</p>
+          <h2 class="font-display font-black text-2xl sm:text-3xl md:text-4xl text-white leading-tight">
+            SUMMER SPECIAL!
+          </h2>
+          <p class="mt-2 text-blue-50 text-base sm:text-lg max-w-xl">
+            Driveway Cleaning + 2 Trash Bins Cleaned &amp; Sanitized for Only
+            <span class="font-display font-black text-white text-2xl sm:text-3xl"> $99 </span>
+            <span class="font-semibold text-blue-100">(Save $21!)</span>
+          </p>
+        </div>
+        <a href="#contact"
+          class="reveal shrink-0 inline-flex items-center justify-center bg-white hover:bg-slate-50 text-blue-700 font-display font-bold text-base px-8 py-4 rounded-full shadow-md shadow-blue-900/20 transition-all hover:-translate-y-0.5">
+          Book Today
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES (Bento) ========== -->
+  <section id="services" class="py-20 md:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <p class="font-display font-semibold text-brand tracking-widest uppercase text-xs sm:text-sm mb-3">What We Offer</p>
+        <h2 class="font-display font-black text-3xl sm:text-4xl md:text-5xl text-slate-900">Our Services</h2>
+        <p class="mt-4 text-slate-600 max-w-xl mx-auto">Premium pressure washing tailored to every surface — powered by pro-grade equipment and honest pricing.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Card 1: Driveway — left half -->
+        <div
+          class="tilt-card bento-feature rounded-2xl p-7 sm:p-10 cursor-pointer lg:col-span-7 lg:row-span-2 min-h-[320px] lg:min-h-full"
+          style="background-image: url('https://placehold.co/900x1100/64748b/ffffff?text=Driveway');"
+          data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.08"
+        >
+          <span class="card-arrow" aria-hidden="true">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+          </span>
+          <div class="card-inner flex flex-col justify-end h-full min-h-[280px] lg:min-h-full">
+            <div class="icon-box">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+            </div>
+            <p class="font-display font-semibold text-blue-100 text-xs tracking-widest uppercase mb-2">Most Popular</p>
+            <h3 class="font-display font-black text-2xl sm:text-3xl text-white mb-3">Driveway Cleaning</h3>
+            <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-md">Remove oil stains, dirt, mildew, and tire marks. Restore your driveway to a like-new finish that boosts curb appeal instantly.</p>
+          </div>
+        </div>
+
+        <!-- Cards 2–5: right half — 2x2 -->
+        <div class="lg:col-span-5 lg:row-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Card 2: Sidewalk -->
+          <div class="tilt-card rounded-2xl p-6 sm:p-7 cursor-pointer" data-tilt data-tilt-max="12" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.08">
+            <span class="card-arrow" aria-hidden="true"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg></span>
+            <div class="card-inner">
+              <div class="icon-box">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Sidewalk Cleaning</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Eliminate algae, moss, and grime for safer, cleaner walkways.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Patio -->
+          <div class="tilt-card rounded-2xl p-6 sm:p-7 cursor-pointer" data-tilt data-tilt-max="12" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.08">
+            <span class="card-arrow" aria-hidden="true"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg></span>
+            <div class="card-inner">
+              <div class="icon-box">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Patio Cleaning</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Revive concrete, pavers, and stone outdoor living spaces.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Trash Bin -->
+          <div class="tilt-card rounded-2xl p-6 sm:p-7 cursor-pointer" data-tilt data-tilt-max="12" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.08">
+            <span class="card-arrow" aria-hidden="true"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg></span>
+            <div class="card-inner">
+              <div class="icon-box">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Trash Bin Cleaning</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Sanitize &amp; deodorize bins — eliminate bacteria and foul odors.</p>
+            </div>
+          </div>
+
+          <!-- Card 5: Garage Floor -->
+          <div class="tilt-card rounded-2xl p-6 sm:p-7 cursor-pointer" data-tilt data-tilt-max="12" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.08">
+            <span class="card-arrow" aria-hidden="true"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg></span>
+            <div class="card-inner">
+              <div class="icon-box">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17l-5.184-5.184a1.125 1.125 0 011.591-1.591L12 12.582l4.173-4.173a1.125 1.125 0 111.591 1.591L12.582 15.17a1.125 1.125 0 01-1.162 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Garage Floor Cleaning</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Blast away oil, grease, and dirt for a spotless garage floor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section id="gallery" class="py-20 md:py-28 bg-blue-700">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <p class="font-display font-semibold text-blue-200 tracking-widest uppercase text-xs sm:text-sm mb-3">Results
+          Speak</p>
+        <h2 class="font-display font-black text-3xl sm:text-4xl md:text-5xl text-white">See The Difference</h2>
+        <p class="mt-4 text-blue-100 max-w-xl mx-auto">Drag the slider to compare dirty vs. clean. Real transformations,
+          every time.</p>
+      </div>
+
+      <div class="reveal">
+        <div id="ba-slider" class="ba-slider aspect-[16/10] w-full">
+          <img src="./images/after.png" alt="Clean driveway after pressure washing" class="ba-base" draggable="false" />
+          <div class="ba-after" id="ba-after">
+            <img id="ba-after-img" src="./images/before.png" alt="Dirty driveway before pressure washing"
+              draggable="false" />
+          </div>
+          <span class="ba-label before">Before</span>
+          <span class="ba-label after">After</span>
+          <div class="ba-handle" id="ba-handle">
+            <div class="ba-handle-btn" aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-blue-200 text-sm mt-4">Click and drag the handle left or right</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT + AREAS ========== -->
+  <section id="about" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal about-visual order-2 lg:order-1">
+          <img src="./images/about.png" alt="AAA Power Washing team at work" width="600" height="600" />
+          <div class="about-badge">100% Satisfaction Guaranteed</div>
+        </div>
+
+        <div class="reveal order-1 lg:order-2">
+          <p class="font-display font-semibold text-brand tracking-widest uppercase text-xs sm:text-sm mb-4">About Us
+          </p>
+          <h2 class="font-display font-black text-4xl sm:text-5xl md:text-6xl text-slate-900 leading-[1.05] mb-6">
+            Local.<br />
+            <span class="text-brand">Hard-Working.</span><br />
+            Honest.
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-4">
+            We're a local, young, hard-working business proud to serve Southlake and surrounding areas. Our goal is
+            simple: provide top-quality pressure washing with honest prices and outstanding customer service.
+          </p>
+          <p class="text-slate-500 leading-relaxed mb-8">
+            Every job gets our full attention — from the first quote to the final rinse. No shortcuts, no upsells, just
+            results you'll notice the moment you pull into the driveway.
+          </p>
+
+          <h3 class="font-display font-bold text-sm tracking-widest uppercase text-slate-400 mb-4">Areas We Serve</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="area-pill">Southlake</span>
+            <span class="area-pill">Grapevine</span>
+            <span class="area-pill">Colleyville</span>
+            <span class="area-pill">Keller</span>
+            <span class="area-pill">Trophy Club</span>
+            <span class="area-pill">Westlake</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REVIEWS ========== -->
+  <section id="reviews" class="py-20 md:py-28 bg-blue-600 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+      <div class="text-center reveal">
+        <p class="font-display font-semibold text-blue-100 tracking-widest uppercase text-xs sm:text-sm mb-3">Testimonials</p>
+        <h2 class="font-display font-black text-3xl sm:text-4xl md:text-5xl text-white">What Neighbors Say</h2>
+      </div>
+    </div>
+
+    <div class="marquee-wrap">
+      <div class="marquee-track gap-6 px-4">
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7">
+          <div class="review-stars mb-4" aria-label="5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"Driveway looks brand new. Professional, on time, and the price was exactly what they quoted. Highly recommend AAA!"</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Verified Customer</p>
+              <p class="text-slate-400 text-xs">Southlake</p>
+            </div>
+          </div>
+        </article>
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7">
+          <div class="review-stars mb-4" aria-label="5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"They cleaned our patio and sidewalks — night and day difference. Friendly guys who take pride in their work."</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Southlake Homeowner</p>
+              <p class="text-slate-400 text-xs">Nearby Area</p>
+            </div>
+          </div>
+        </article>
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7">
+          <div class="review-stars mb-4" aria-label="5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"Trash bin cleaning was a game changer. No more smell. Summer special deal was a steal. Booking them again!"</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Local Resident</p>
+              <p class="text-slate-400 text-xs">Colleyville</p>
+            </div>
+          </div>
+        </article>
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7">
+          <div class="review-stars mb-4" aria-label="5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"Oil stains gone from the garage floor. Fast, thorough, and respectful of our property. 5 stars easy."</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Verified Homeowner</p>
+              <p class="text-slate-400 text-xs">Keller</p>
+            </div>
+          </div>
+        </article>
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7">
+          <div class="review-stars mb-4" aria-label="5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"Honest pricing and outstanding results. Our home's curb appeal went through the roof."</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Verified Customer</p>
+              <p class="text-slate-400 text-xs">Trophy Club</p>
+            </div>
+          </div>
+        </article>
+        <!-- Duplicate set for seamless loop -->
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7" aria-hidden="true">
+          <div class="review-stars mb-4">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"Driveway looks brand new. Professional, on time, and the price was exactly what they quoted. Highly recommend AAA!"</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Verified Customer</p>
+              <p class="text-slate-400 text-xs">Southlake</p>
+            </div>
+          </div>
+        </article>
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7" aria-hidden="true">
+          <div class="review-stars mb-4">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"They cleaned our patio and sidewalks — night and day difference. Friendly guys who take pride in their work."</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Southlake Homeowner</p>
+              <p class="text-slate-400 text-xs">Nearby Area</p>
+            </div>
+          </div>
+        </article>
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7" aria-hidden="true">
+          <div class="review-stars mb-4">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"Trash bin cleaning was a game changer. No more smell. Summer special deal was a steal. Booking them again!"</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Local Resident</p>
+              <p class="text-slate-400 text-xs">Colleyville</p>
+            </div>
+          </div>
+        </article>
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7" aria-hidden="true">
+          <div class="review-stars mb-4">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"Oil stains gone from the garage floor. Fast, thorough, and respectful of our property. 5 stars easy."</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Verified Homeowner</p>
+              <p class="text-slate-400 text-xs">Keller</p>
+            </div>
+          </div>
+        </article>
+        <article class="review-card shrink-0 w-80 sm:w-[26rem] rounded-2xl p-6 sm:p-7" aria-hidden="true">
+          <div class="review-stars mb-4">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-[0.95rem] leading-relaxed mb-6">"Honest pricing and outstanding results. Our home's curb appeal went through the roof."</p>
+          <div class="flex items-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+            </span>
+            <div>
+              <p class="font-display font-bold text-slate-900 text-sm">Verified Customer</p>
+              <p class="text-slate-400 text-xs">Trophy Club</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+        <div class="lg:col-span-5 reveal lg:sticky lg:top-28">
+          <p class="font-display font-semibold text-brand tracking-widest uppercase text-xs sm:text-sm mb-4">Support</p>
+          <h2 class="font-display font-black text-4xl sm:text-5xl md:text-6xl text-slate-900 leading-[1.05] mb-5">
+            Got<br /><span class="text-brand">Questions?</span>
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-sm">
+            Everything you need to know about our services. Still unsure? Give us a call — we're happy to help.
+          </p>
+          <a href="tel:4695047695"
+            class="inline-flex items-center gap-2 mt-8 text-brand font-display font-bold hover:text-brand-dark transition-colors">
+            Call (469)-504-7695
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="lg:col-span-7 space-y-3 reveal" id="faq-list">
+          <div class="faq-item rounded-xl overflow-hidden">
+            <button
+              class="faq-btn w-full flex items-center justify-between gap-4 px-5 py-5 text-left font-display font-semibold text-slate-900 hover:text-brand transition-colors"
+              aria-expanded="false">
+              <span>Do I need to be home?</span>
+              <span class="faq-icon-wrap" aria-hidden="true"><span class="faq-icon"></span></span>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="text-slate-600 text-sm pb-5 leading-relaxed">Nope! As long as we have access to the work areas
+                (and a water spigot if needed), you don't have to be present. Many customers leave us to it and come
+                home to a sparkling property.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl overflow-hidden">
+            <button
+              class="faq-btn w-full flex items-center justify-between gap-4 px-5 py-5 text-left font-display font-semibold text-slate-900 hover:text-brand transition-colors"
+              aria-expanded="false">
+              <span>Do you use my water?</span>
+              <span class="faq-icon-wrap" aria-hidden="true"><span class="faq-icon"></span></span>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="text-slate-600 text-sm pb-5 leading-relaxed">Yes — we typically connect to an outdoor spigot at
+                your property. We use water efficiently and clean up thoroughly when the job is done.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl overflow-hidden">
+            <button
+              class="faq-btn w-full flex items-center justify-between gap-4 px-5 py-5 text-left font-display font-semibold text-slate-900 hover:text-brand transition-colors"
+              aria-expanded="false">
+              <span>How long does it take?</span>
+              <span class="faq-icon-wrap" aria-hidden="true"><span class="faq-icon"></span></span>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="text-slate-600 text-sm pb-5 leading-relaxed">Most residential jobs (driveway + sidewalks or
+                patio) take about 1–3 hours depending on size and condition. We'll give you a time estimate with your
+                free quote.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl overflow-hidden">
+            <button
+              class="faq-btn w-full flex items-center justify-between gap-4 px-5 py-5 text-left font-display font-semibold text-slate-900 hover:text-brand transition-colors"
+              aria-expanded="false">
+              <span>Is pressure washing safe?</span>
+              <span class="faq-icon-wrap" aria-hidden="true"><span class="faq-icon"></span></span>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="text-slate-600 text-sm pb-5 leading-relaxed">Absolutely — when done correctly. We match pressure
+                and technique to each surface so concrete, pavers, and coatings stay protected while dirt and mildew
+                disappear.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl overflow-hidden">
+            <button
+              class="faq-btn w-full flex items-center justify-between gap-4 px-5 py-5 text-left font-display font-semibold text-slate-900 hover:text-brand transition-colors"
+              aria-expanded="false">
+              <span>What forms of payment do you accept?</span>
+              <span class="faq-icon-wrap" aria-hidden="true"><span class="faq-icon"></span></span>
+            </button>
+            <div class="faq-answer px-5">
+              <p class="text-slate-600 text-sm pb-5 leading-relaxed">We accept cash, check, and major credit/debit
+                cards. Payment is due upon completion of the job.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT + FOOTER ========== -->
+  <section id="contact" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <p class="font-display font-semibold text-brand tracking-widest uppercase text-xs sm:text-sm mb-3">Get In Touch
+        </p>
+        <h2 class="font-display font-black text-3xl sm:text-4xl md:text-5xl text-slate-900">Request a Free Quote</h2>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-10 lg:gap-14">
+        <form id="contact-form"
+          action="https://formsubmit.co/aaapowerwashingtx@gmail.com"
+          method="POST"
+          class="lg:col-span-3 reveal space-y-5 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-md shadow-slate-200/60"
+          novalidate>
+          <input type="hidden" name="_subject" value="New Quote Request — AAA Power Washing" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="name"
+                class="block text-xs font-display font-semibold tracking-wider uppercase text-slate-500 mb-2">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" class="form-field" />
+            </div>
+            <div>
+              <label for="phone"
+                class="block text-xs font-display font-semibold tracking-wider uppercase text-slate-500 mb-2">Phone</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(469) 000-0000" class="form-field" />
+            </div>
+          </div>
+          <div>
+            <label for="email"
+              class="block text-xs font-display font-semibold tracking-wider uppercase text-slate-500 mb-2">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@email.com" class="form-field" />
+          </div>
+          <div>
+            <label for="service"
+              class="block text-xs font-display font-semibold tracking-wider uppercase text-slate-500 mb-2">Service
+              Needed</label>
+            <select id="service" name="service" required class="form-field">
+              <option value="" disabled selected>Select a service</option>
+              <option value="driveway">Driveway Cleaning</option>
+              <option value="sidewalk">Sidewalk Cleaning</option>
+              <option value="patio">Patio Cleaning</option>
+              <option value="trash-bin">Trash Bin Cleaning</option>
+              <option value="garage">Garage Floor Cleaning</option>
+              <option value="summer-special">Summer Special ($99)</option>
+              <option value="multiple">Multiple Services</option>
+            </select>
+          </div>
+          <div>
+            <label for="message"
+              class="block text-xs font-display font-semibold tracking-wider uppercase text-slate-500 mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your property..."
+              class="form-field resize-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full sm:w-auto inline-flex items-center justify-center bg-brand hover:bg-brand-dark text-white font-display font-bold text-base px-10 py-4 rounded-full shadow-md shadow-slate-200 transition-all hover:shadow-lg hover:-translate-y-0.5">
+            Send Message
+          </button>
+          <p id="form-status" class="text-sm text-brand hidden" role="status"></p>
+        </form>
+
+        <div class="lg:col-span-2 reveal space-y-8">
+          <div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-6">Contact Details</h3>
+            <ul class="space-y-5">
+              <li class="flex items-start gap-4">
+                <span class="flex items-center justify-center w-11 h-11 rounded-xl bg-brand-soft text-brand shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Phone</p>
+                  <a href="tel:4695047695"
+                    class="text-slate-900 font-display font-bold text-lg hover:text-brand transition-colors">(469)-504-7695</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="flex items-center justify-center w-11 h-11 rounded-xl bg-brand-soft text-brand shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Email</p>
+                  <a href="mailto:aaapowerwashingtx@gmail.com"
+                    class="text-slate-900 font-medium hover:text-brand transition-colors break-all">aaapowerwashingtx@gmail.com</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="flex items-center justify-center w-11 h-11 rounded-xl bg-brand-soft text-brand shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Business Hours</p>
+                  <p class="text-slate-900 font-medium">Mon – Sat: 7:00 AM – 7:00 PM</p>
+                  <p class="text-slate-500 text-sm">Sunday: By appointment</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border border-blue-100 bg-brand-soft p-6">
+            <p class="font-display font-bold text-brand text-sm tracking-wider uppercase mb-2">Summer Special</p>
+            <p class="text-slate-900 font-display font-bold text-lg leading-snug">Driveway + 2 Trash Bins for <span
+                class="text-brand">$99</span></p>
+            <a href="tel:4695047695" class="inline-block mt-4 text-brand font-semibold text-sm hover:underline">Call to
+              book →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <p class="font-display font-extrabold text-white text-lg mb-1">AAA Power Washing</p>
+          <p class="text-blue-200 text-sm">Professional Pressure Washing in Southlake, TX</p>
+        </div>
+        <div class="flex items-center gap-5">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+            class="w-10 h-10 rounded-full border border-blue-700 flex items-center justify-center text-blue-100 hover:text-white hover:border-white transition-colors"
+            aria-label="Facebook">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12H17l-.4 3h-2.3v7A10 10 0 0022 12z" />
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+            class="w-10 h-10 rounded-full border border-blue-700 flex items-center justify-center text-blue-100 hover:text-white hover:border-white transition-colors"
+            aria-label="Instagram">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.5 1 .4.4.7.9 1 1.5.2.4.4 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-1 1.5-.4.4-.9.7-1.5 1-.4.2-1.1.4-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.5-1-.4-.4-.7-.9-1-1.5-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.5-1 1-1.5.4-.4.9-.7 1.5-1 .4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 0 5.7.1 4.8.3 4 .6c-.9.3-1.6.8-2.3 1.5C1 2.9.6 3.7.3 4.6.1 5.4-.1 6.3 0 7.6 0 8.9 0 9.3 0 12s0 3.1.1 4.4c.1 1.3.3 2.2.6 3 .3.9.8 1.6 1.5 2.3.7.7 1.4 1.1 2.3 1.5.8.3 1.7.5 3 .6 1.3.1 1.7.1 4.4.1s3.1 0 4.4-.1c1.3-.1 2.2-.3 3-.6.9-.3 1.6-.8 2.3-1.5.7-.7 1.1-1.4 1.5-2.3.3-.8.5-1.7.6-3 .1-1.3.1-1.7.1-4.4s0-3.1-.1-4.4c-.1-1.3-.3-2.2-.6-3-.3-.9-.8-1.6-1.5-2.3C21.1 1.4 20.3.9 19.4.6 18.6.3 17.7.1 16.4 0 15.1 0 14.7 0 12 0z" />
+              <path
+                d="M12 5.8A6.2 6.2 0 1012 18.2 6.2 6.2 0 0012 5.8zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 11-2.9 0 1.4 1.4 0 012.9 0z" />
+            </svg>
+          </a>
+          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+            class="w-10 h-10 rounded-full border border-blue-700 flex items-center justify-center text-blue-100 hover:text-white hover:border-white transition-colors"
+            aria-label="Google Maps">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="mt-8 pt-6 border-t border-blue-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-blue-200 text-sm">
+        <p>&copy; <span id="year"></span> AAA Power Washing. All rights reserved.</p>
+        <p>Serving Southlake, TX &amp; surrounding areas</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

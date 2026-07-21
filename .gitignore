@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Logs & caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache/
+dist/
+build/
+tmp/
+temp/
+
+# Dependencies (if added later)
+node_modules/
+
+# Optional local tooling
+.parcel-cache/
+.firebase/
+.vercel/
+.netlify/
