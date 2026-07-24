@@ -324,19 +324,21 @@
 
     const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
     heroTl
-      .to('.hero-eyebrow', { opacity: 1, y: 0, duration: 0.6 }, 0.2)
-      .fromTo('.hero-eyebrow', { y: 20 }, { y: 0, duration: 0.6 }, 0.2)
+      .to('.hero-brand', { opacity: 1, y: 0, duration: 0.7 }, 0.15)
+      .fromTo('.hero-brand', { y: 28 }, { y: 0, duration: 0.7 }, 0.15)
+      .to('.hero-eyebrow', { opacity: 1, y: 0, duration: 0.55 }, 0.35)
+      .fromTo('.hero-eyebrow', { y: 16 }, { y: 0, duration: 0.55 }, 0.35)
       .to(heroWords, {
         opacity: 1,
         y: 0,
         rotateX: 0,
-        duration: 0.9,
-        stagger: 0.08,
-      }, 0.35)
-      .to('.hero-sub', { opacity: 1, y: 0, duration: 0.7 }, '-=0.35')
-      .fromTo('.hero-sub', { y: 24 }, { y: 0, duration: 0.7 }, '<')
-      .to('.hero-ctas', { opacity: 1, y: 0, duration: 0.7 }, '-=0.4')
-      .fromTo('.hero-ctas', { y: 24 }, { y: 0, duration: 0.7 }, '<');
+        duration: 0.85,
+        stagger: 0.07,
+      }, 0.45)
+      .to('.hero-sub', { opacity: 1, y: 0, duration: 0.65 }, '-=0.3')
+      .fromTo('.hero-sub', { y: 20 }, { y: 0, duration: 0.65 }, '<')
+      .to('.hero-ctas', { opacity: 1, y: 0, duration: 0.65 }, '-=0.35')
+      .fromTo('.hero-ctas', { y: 20 }, { y: 0, duration: 0.65 }, '<');
 
     if (prefersReducedMotion) {
       heroTl.progress(1);
